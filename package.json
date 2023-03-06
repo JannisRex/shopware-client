@@ -1,0 +1,12 @@
+{
+  "name": "shopware-client",
+  "version": "0.0.1",
+  "description": "JS client for shopware REST-api calls",
+  "main": "index.js",
+  "repository": "https://github.com/JannisRex/shopware-client",
+  "author": "REX",
+  "license": "MIT",
+  "dependencies": {
+    "node-rest-client": "^3.1.1"
+  }
+}
