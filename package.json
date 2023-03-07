@@ -2,12 +2,13 @@
   "name": "shopware-client",
   "version": "0.0.1",
   "description": "JS client for shopware REST-api calls",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "repository": "https://github.com/JannisRex/shopware-client",
   "author": "REX",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "fetch": "^1.1.0"
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0"
   }
 }
