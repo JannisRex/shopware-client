@@ -14,6 +14,10 @@ body {
   background: #222222;
 }
 
+.navLinkTop {
+  margin-top: 30px;
+}
+
 .navLink {
   display: block;
   padding: 12px 18px;
@@ -23,7 +27,7 @@ body {
 }
 
 .navLink:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(75, 27, 66, .7);
 }
 
 #app {
@@ -33,5 +37,56 @@ body {
 }
 
 a {
-  color: #009579;
+  color: #4b1b42;
+}
+
+.button {
+  appearance: none;
+  background-color: #4b1b42;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #712963;
+}
+
+.button:focus {
+  box-shadow: rgba(75, 27, 66, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button:disabled {
+  background-color: rgba(150,54,133, .8);
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button:active {
+  background-color: #843073;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
