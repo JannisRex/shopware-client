@@ -2,6 +2,14 @@
 
 This will be a client to use shopware API calls for common problems.
 
+-- --
+
+1. yarn install
+2. yarn run dev
 
 
-## Delete (by ID etc.
+## Get (article, category ...)
+
+## Post
+
+## Delete (by ID ...)
