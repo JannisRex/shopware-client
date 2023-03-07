@@ -1,4 +1,4 @@
-import View from './abstract'
+import View from './abstract.js'
 
 export default class extends View {
   constructor() {
@@ -7,9 +7,9 @@ export default class extends View {
   }
 
   async getHtml() {
-    <div>
+    return `
       <h1>Home</h1>
       <p>body text</p>
-    </div>
+    `
   }
 }
