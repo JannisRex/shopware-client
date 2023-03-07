@@ -2,6 +2,7 @@ import View from './abstract'
 
 export default class extends View {
   constructor() {
+    super()
     this.setTitle('Home')
   }
 

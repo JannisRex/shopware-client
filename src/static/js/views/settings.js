@@ -2,7 +2,8 @@ import View from './abstract'
 
 export default class extends View {
   constructor() {
-    this.setTitle('Home')
+    super()
+    this.setTitle('Settings')
   }
 
   async getHtml() {
