@@ -1,5 +1,8 @@
 import View from './abstract.js'
-import { getTest } from '../api/test.js'
+
+// need to add EventListener since onClick cant really be used,
+// because we only pass the innerHtml from the template string
+// and cannot acces functions pased in this class 
 
 export default class extends View {
   constructor() {
@@ -11,7 +14,7 @@ export default class extends View {
     return `
       <h1>API</h1>
       <p>body text</p>
-      <button class="button" role="button" onClick="getTest()">GET</button>
+      <button class="button" role="button" onClick="console.log('this works')">GET</button>
     `
   }
 }
