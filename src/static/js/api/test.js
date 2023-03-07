@@ -10,4 +10,4 @@ const getTest = async () => {
     .catch((err) => console.log(err))
 }
 
-getTest()
+export { getTest }
