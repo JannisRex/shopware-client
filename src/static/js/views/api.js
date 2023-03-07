@@ -1,4 +1,5 @@
 import View from './abstract.js'
+import { getTest } from '../api/test.js'
 
 export default class extends View {
   constructor() {
@@ -10,6 +11,7 @@ export default class extends View {
     return `
       <h1>API</h1>
       <p>body text</p>
+      <button class="button" role="button" onClick="getTest()">GET</button>
     `
   }
 }
