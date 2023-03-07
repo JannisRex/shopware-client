@@ -1,3 +1,7 @@
+import Home from './views/home.js'
+import API from './views/api.js'
+import Settings from './views/settings.js'
+
 // prevent reload for each view
 const navigateTo = (url) => {
   history.pushState(null, null, url)
@@ -6,9 +10,9 @@ const navigateTo = (url) => {
 
 const router = async () => {
   const routes = [
-    { path: '/', view: () => console.log('Home') },
-    { path: '/api', view: () => console.log('API') },
-    { path: '/settings', view: () => console.log('Settings') },
+    { path: '/', view: Home },
+    { path: '/api', view: API },
+    { path: '/settings', view: Settings },
   ]
 
   const possibleMatches = routes.map((route) => {
@@ -27,11 +31,15 @@ const router = async () => {
     }
   }
 
+  const view = new match.route.view()
+
+  document.querySelector('#app').innerHTML = await view.getHtml()
+
   console.log(match.route.view())
 }
 
 // when using back buttons or change popstate otherwise
-window.addEventListener("popstate", router)
+window.addEventListener('popstate', router)
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', (e) => {
